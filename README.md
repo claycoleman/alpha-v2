@@ -1,2 +1,2 @@
 # alpha-v2
-Alpha (thinkalpha.org) version 
+Building a new site for Alpha (thinkalpha.org)!
