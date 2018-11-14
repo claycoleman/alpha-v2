@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { CENTRAL_GREEN_COLOR } from '../../utils/constants';
 
 export default props => {
   const currUrl = window.location.pathname == props.to;
   return (
     <Link
       css={{
-        color: currUrl ? '#017C3D' : 'inherit',
+        color: currUrl ? CENTRAL_GREEN_COLOR : 'inherit',
         borderRadius: '2px',
         fontSize: '0.70711rem',
         WebkitFlexShrink: '0',

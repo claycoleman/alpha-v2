@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { CENTRAL_GREEN_COLOR } from '../../utils/constants';
 
 export default props => {
   const currUrl = window.location.pathname === props.to;
@@ -15,10 +16,10 @@ export default props => {
         marginBottom: '0.125rem',
         paddingTop: '0.25rem',
         borderBottom: '0.125rem solid transparent',
-        borderBottomColor: currUrl ? '#017C3D' : 'transparent',
-        color: currUrl ? '#017C3D' : 'inherit',
+        borderBottomColor: currUrl ? CENTRAL_GREEN_COLOR : 'transparent',
+        color: currUrl ? CENTRAL_GREEN_COLOR : 'inherit',
         ':hover': {
-          color: '#017C3D',
+          color: CENTRAL_GREEN_COLOR,
         },
         WebkitFontSmoothing: 'antialiased',
         position: 'relative',

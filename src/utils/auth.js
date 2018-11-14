@@ -1,17 +1,25 @@
 import { MENTOR_AUTH_KEY, STUDENT_AUTH_KEY } from "./constants";
 
 export function authenticateMentor() {
-  localStorage.setItem(MENTOR_AUTH_KEY, 'true');
+  sessionStorage.setItem(MENTOR_AUTH_KEY, 'true');
+}
+
+export function unauthenticateMentor() {
+  sessionStorage.removeItem(MENTOR_AUTH_KEY);
 }
 
 export function isAuthenticatedMentor() {
-  return localStorage.getItem(MENTOR_AUTH_KEY);
+  return sessionStorage.getItem(MENTOR_AUTH_KEY);
 }
 
 export function authenticateStudent() {
-  localStorage.setItem(STUDENT_AUTH_KEY, 'true');
+  sessionStorage.setItem(STUDENT_AUTH_KEY, 'true');
+}
+
+export function unauthenticateStudent() {
+  sessionStorage.removeItem(STUDENT_AUTH_KEY);
 }
 
 export function isAuthenticatedStudent() {
-  return localStorage.getItem(STUDENT_AUTH_KEY);
+  return sessionStorage.getItem(STUDENT_AUTH_KEY);
 }

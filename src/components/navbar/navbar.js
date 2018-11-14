@@ -70,15 +70,18 @@ export default props => {
             overflowX: 'auto',
           }}
         />
-        <div css={{
-          display: 'flex',
-        '@media(max-width: 768px)': {
-          display: 'none',
-        }}}> 
-        <NavbarLink to="/">Home</NavbarLink>
-        <NavbarLink to="/what-we-do/">What We Do</NavbarLink>
-        <NavbarLink to="/who-we-are/">Who We Are</NavbarLink>
-        <NavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</NavbarLink>
+        <div
+          css={{
+            display: 'flex',
+            '@media(max-width: 768px)': {
+              display: 'none',
+            },
+          }}
+        >
+          <NavbarLink to="/">Home</NavbarLink>
+          <NavbarLink to="/what-we-do/">What We Do</NavbarLink>
+          <NavbarLink to="/who-we-are/">Who We Are</NavbarLink>
+          <NavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</NavbarLink>
         </div>
       </div>
     </header>

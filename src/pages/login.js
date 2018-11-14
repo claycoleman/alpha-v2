@@ -14,8 +14,6 @@ export default class LoginPage extends BasePage {
     };
   }
 
-  componentDidMount() {}
-
   _handleKeyDown = e => {
     if (e.key === 'Enter') {
       if (e.target.value === MENTOR_CODE) {
@@ -42,7 +40,7 @@ export default class LoginPage extends BasePage {
         <Header>Login</Header>
         <p>Alpha Mentors and Students, enter your passcode here to access trainings and other materials.</p>
         <input placeholder="passcode" onChange={this._handleTextChange} onKeyDown={this._handleKeyDown} value={this.state.enteredCode} />
-        { this.state.incorrectCode && <h3>Incorrect passcode!</h3>}
+        {this.state.incorrectCode && <h3>Incorrect passcode!</h3>}
       </div>
     );
   }

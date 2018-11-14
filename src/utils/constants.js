@@ -3,7 +3,7 @@ export const MENTOR_AUTH_KEY = 'alpha-mentor';
 
 export const MENTOR_VIDEOS = [
   {
-    title: 'Important Cat Video',
+    title: 'Important cat video',
     id: '2g811Eo7K8U',
   },
   {
@@ -46,4 +46,6 @@ export const RESPONSIVE_OUTER_PADDINGS = {
     paddingLeft: '4.2rem',
     paddingRight: '4.2rem',
   },
-}
+};
+
+export const CENTRAL_GREEN_COLOR = '#017C3D';

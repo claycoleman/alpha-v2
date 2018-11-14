@@ -13,3 +13,9 @@ run `gatsby develop`
 
 open in your browser
 http://localhost:8000/
+
+super useful CSS to React site
+https://staxmanade.com/CssToReact/
+
+great react resource
+https://reactjs.org/docs/thinking-in-react.html
