@@ -12,6 +12,19 @@ export const MENTOR_VIDEOS = [
   },
 ];
 
+export const INDEX_VIDEO1 = [
+  {
+    title: 'Introduction to Alpha',
+    id: 'veO6l0mVv6o'
+  }
+]
+
+export const INDEX_VIDEO2 = [
+  {
+    title:'Why Alpha?',
+    id:'cOPp3KJEkyQ'
+  }
+]
 export const STUDENT_CODE = 'Students lifting students';
 export const STUDENT_AUTH_KEY = 'alpha-student';
 
@@ -49,3 +62,4 @@ export const RESPONSIVE_OUTER_PADDINGS = {
 };
 
 export const CENTRAL_GREEN_COLOR = '#017C3D';
+export const CENTRAL_LIGHTGREEN_COLOR = '#6B8F71'
