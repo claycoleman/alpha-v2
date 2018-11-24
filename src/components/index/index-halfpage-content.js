@@ -2,7 +2,7 @@ import React from 'react';
 
 export default props => (
   <div css={{
-    float: "right"
+    textAlign: 'right'
   }}>
     <h3>{props.title}</h3>
     <ul>

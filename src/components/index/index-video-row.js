@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import IndexVideo from './index-video';
 import { CENTRAL_LIGHTGREEN_COLOR } from '../../utils/constants';
-import HalfPageContent from './index-halfpage-content'
 
 export default class IndexVideoRow extends Component {
   render() {
@@ -9,15 +8,17 @@ export default class IndexVideoRow extends Component {
     return (
       <div css={{ 
           display: 'inline',
-          textAlign:'left',
-          width:'50%'}}>
+          float:'left',
+          width:'50%',
+          '@media(max-width: 768px)': {
+            float: 'none',
+            width: 'auto'
+          }}}>
         {this.props.videoDatas.map(video => (
           <div css={{ display: 'inline' }}>
             <IndexVideo videoData={video} />
           </div>
         ))}
-
-        <HalfPageContent bodyListItems={'We build REAL relationships with each student'} title={'What We Do'}/>
       </div>
     );
   }

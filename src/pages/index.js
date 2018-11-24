@@ -15,6 +15,7 @@ export default class HomePage extends BasePage {
       <div>
         <Header>We are Alpha</Header>
         <IndexVideoRow videoDatas={INDEX_VIDEO1} />
+        <HalfPageContent bodyListItems={'We build REAL relationships with each student'} title={'What We Do'}/>
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="First Column Item" moreLink="/" />
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Second Column Item" moreLink="/" />
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Third Column Item" moreLink="/" />
