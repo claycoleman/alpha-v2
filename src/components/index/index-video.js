@@ -14,7 +14,9 @@ export default class IndexVideo extends Component {
 
     return (
       <div>
-        <h4>{this.props.videoData.title}</h4>
+        <h4 css={{
+          textAlign: "center",
+        }}>{this.props.videoData.title}</h4>
         <YouTube videoId={this.props.videoData.id} opts={opts} onReady={this._onReady} />
       </div>
     );

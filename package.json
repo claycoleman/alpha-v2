@@ -8,15 +8,17 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "gatsby": "^2.0.0",
     "gatsby-plugin-glamor": "^2.0.5",
     "gatsby-plugin-typography": "^2.2.0",
     "glamor": "^2.20.40",
     "pouchdb": "^7.0.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-typography": "^0.16.13",
     "react-youtube": "^7.8.0",
+    "reactstrap": "^6.5.0",
     "typography": "^0.16.17"
   }
 }
