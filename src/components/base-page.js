@@ -13,7 +13,10 @@ export default class BasePage extends Component {
 
   render() {
     return (
-      <div>
+      <div css={{
+        fontFamily:
+              '"Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
+      }}>
         <Navbar />
         <MiniNavbar />
 

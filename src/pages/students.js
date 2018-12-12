@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
+import Block from '../components/block'
 import { navigate } from 'gatsby';
 import BasePage from '../components/base-page';
 import { isAuthenticatedStudent } from '../utils/auth';
@@ -17,8 +18,10 @@ export default class StudentsPage extends BasePage {
     return (
       <div>
         <Header>Students</Header>
-        <p>Here we will display all the training videos and other materials as necessary.</p>
+        <Block>
+        {/* <p>Here we will display all the training videos and other materials as necessary.</p> */}
         <TrainingVideoRow videoDatas={STUDENT_VIDEOS} />
+        </Block>
       </div>
     );
   }

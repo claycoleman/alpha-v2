@@ -27,6 +27,8 @@ export default class HomePage extends BasePage {
         <p
           css={{
             fontSize: 50,
+            fontFamily:
+              '"Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
             width: "100%",
             float: "left",
             '@media(max-width: 768px)': {
@@ -40,6 +42,8 @@ export default class HomePage extends BasePage {
         <p
           css={{
             width: "100%",
+            fontFamily:
+              '"Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
             float: "left",
             '@media(max-width: 768px)': {
               float: 'none',
