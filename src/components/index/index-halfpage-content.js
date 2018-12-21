@@ -2,18 +2,19 @@ import React from 'react';
 
 export default props => (
   <div css={{
-    width: "50%",
+    width: "40%",
     float: "right",
     '@media(max-width: 768px)': {
       float: 'none',
       width: 'auto'
     }}}>
-    <h3 css={{
-      fontSize: 25,
+    <h4 css={{
       textAlign:"center",
-    }}>{props.title}</h3>
+    }}>{props.title}</h4>
     <ul>
-        <li>{props.bodyListItems}</li>
+        <li css={{
+          "listStyleType":"none"
+        }}>{props.bodyListItems}</li>
     </ul>
   </div>
 );

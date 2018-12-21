@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import BasePage from '../components/base-page';
-
+import Carosel from '../components/carosel';
 export default class WhoWeArePage extends BasePage {
   componentDidMount() {}
 
@@ -9,6 +9,7 @@ export default class WhoWeArePage extends BasePage {
     return (
       <div>
         <Header>Who We Are</Header>
+        <Carosel></Carosel>
         <p>Information about the organization itself</p>
         <p>Leadership team with a slider? We honestly don't need that many people on here, maybe just top level leadership who would be communicated with</p>
       </div>

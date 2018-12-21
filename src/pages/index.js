@@ -24,26 +24,22 @@ export default class HomePage extends BasePage {
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Second Column Item" moreLink="/" />
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Third Column Item" moreLink="/" />
         <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Four Column Item" moreLink="/" /> */}
-        <p
+        <h4
           css={{
-            fontSize: 50,
-            fontFamily:
-              '"Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-            width: "100%",
-            float: "left",
-            '@media(max-width: 768px)': {
+           width: "100%",
+          float: "left",
+          textAlign: "center",
+          '@media(max-width: 768px)': {
               float: 'none',
               width: 'auto'
             }
           }}
         >
           Changing this
-        </p>
+        </h4>
         <p
           css={{
             width: "100%",
-            fontFamily:
-              '"Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
             float: "left",
             '@media(max-width: 768px)': {
               float: 'none',
