@@ -2,8 +2,9 @@ import React from 'react';
 
 export default props => (
   <div css={{
-    width: "40%",
-    float: "right",
+    width: '40%',
+    float: 'right',
+    display: 'block',
     '@media(max-width: 768px)': {
       float: 'none',
       width: 'auto'
@@ -13,7 +14,7 @@ export default props => (
     }}>{props.title}</h4>
     <ul>
         <li css={{
-          "listStyleType":"none"
+          listStyleType:'none'
         }}>{props.bodyListItems}</li>
     </ul>
   </div>

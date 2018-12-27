@@ -21,7 +21,7 @@ export const INDEX_VIDEO1 = [
 
 export const INDEX_VIDEO2 = [
   {
-    title:'Why Alpha?',
+    title:'',
     id:'cOPp3KJEkyQ'
   }
 ]

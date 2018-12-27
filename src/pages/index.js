@@ -2,12 +2,15 @@ import React from 'react';
 import BasePage from '../components/base-page';
 import Header from '../components/header';
 import { INDEX_VIDEO1 } from '../utils/constants';
-import { INDEX_VIDEO2 } from '../utils/constants';
 import IndexVideoRow from '../components/index/index-video-row';
 import ColumnItem from '../components/column-item';
 import HalfPageContent from '../components/index/index-halfpage-content';
 import JumboTron from '../components/jumbotron';
+import GreenButton from '../components/greenbutton';
+import {Container} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import container from '../components/container';
+import Row from '../components/row';
 
 
 export default class HomePage extends BasePage {
@@ -17,38 +20,34 @@ export default class HomePage extends BasePage {
     return (
       <div>
         {/* <Header>We are Alpha</Header> */}
+        
         <JumboTron></JumboTron>
         <IndexVideoRow videoDatas={INDEX_VIDEO1} />
         <HalfPageContent bodyListItems={'We build REAL relationships with each student'} title={'What We Do'}/>
-        {/* <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="First Column Item" moreLink="/" />
-        <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Second Column Item" moreLink="/" />
-        <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Third Column Item" moreLink="/" />
-        <ColumnItem bodyImage="../image.jpg" bodyText={'This is our body text'} title="Four Column Item" moreLink="/" /> */}
-        <h4
-          css={{
-           width: "100%",
-          float: "left",
-          textAlign: "center",
+        <Row title = 'Donate' content = 'While you may not be able to sacrifice your time, your contributions can still make a difference. 
+            Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a 
+            difference in a number of ways:'/>
+        <container css={{
+          width: '100%',
+          float: 'left',
+          textAlign: 'left',
           '@media(max-width: 768px)': {
-              float: 'none',
-              width: 'auto'
-            }
-          }}
-        >
-          Changing this
-        </h4>
-        <p
-          css={{
-            width: "100%",
-            float: "left",
-            '@media(max-width: 768px)': {
-              float: 'none',
-              width: 'auto'
-            }
-          }}>
-          Here we can include anything that we feel like including. Follow the design from the existing website to build something really nice? The first thing
-          that we need to do is discuss what the homepage would look like, then componentize it.
-        </p>
+            float: 'none',
+            width: 'auto'
+          }
+        }}>
+          {/* <h4>Donate</h4>
+          <p>While you may not be able to sacrifice your time, your contributions can still make a difference. 
+            Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a 
+            difference in a number of ways:</p> */}
+            <ol>
+              <li>College Application Fees</li>
+              <li>ACT Prep Materials and Fees</li>
+              <li>Scholarships</li>
+              <li>Leadership Costs</li>
+            </ol>
+        <GreenButton text = 'Donate Now' to= 'https://www.paypal.com/donate/?token=lpxLoY4Qi1Xk6PF846n-lul3ZEzGZWDIt0vH4bkuGOW2GymcPEIt-iypJIDIvsprHteX3m&country.x=US&locale.x=US'></GreenButton>
+        </container>
       </div>
     );
   }

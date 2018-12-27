@@ -1,9 +1,9 @@
 import React from "react"
 
 export default (props) => (
-<h1 css = {{
+<h2 css = {{
     "textAlign":"center",
-}}>{props.children}</h1>)
+}}>{props.children}</h2>)
 
 
   

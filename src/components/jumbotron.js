@@ -30,7 +30,7 @@ const Example = (props) => {
           color: "white",
           textAlign:"center",
         }}>If you're interested in helping in our cause, please donate here.</p> */}
-        <GreenButton></GreenButton>
+        <GreenButton text = 'Donate Now' to='https://www.paypal.com/donate/?token=lpxLoY4Qi1Xk6PF846n-lul3ZEzGZWDIt0vH4bkuGOW2GymcPEIt-iypJIDIvsprHteX3m&country.x=US&locale.x=US'></GreenButton>
       </Wrapper>
     </div>
   );

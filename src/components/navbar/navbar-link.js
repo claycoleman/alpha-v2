@@ -20,6 +20,9 @@ export default props => {
         color: currUrl ? CENTRAL_GREEN_COLOR : 'inherit',
         ':hover': {
           color: CENTRAL_GREEN_COLOR,
+          textDecorationLine: 'none', 
+          borderBottom: '0.125rem solid transparent',
+          borderBottomColor: CENTRAL_GREEN_COLOR,      
         },
         WebkitFontSmoothing: 'antialiased',
         position: 'relative',
