@@ -1,4 +1,5 @@
 import React from 'react';
+import { CENTRAL_GREEN_COLOR } from '../utils/constants';
 // import { Button } from 'reactstrap';
 
 // const Link = styled.section`
@@ -35,13 +36,13 @@ export default props=>{
                   fontSize: '1rem',
                   lineHeight: '1.5',
                   borderRadius: '.25rem',
-                  backgroundColor: '#017C3D',
+                  backgroundColor: CENTRAL_GREEN_COLOR,
                   color:'white',
                   marginLeft:'auto',
                   marginRight:'auto',
                   ':hover': {
-                    color: 'white',
-                    border:'3px solid white',
+                    color: CENTRAL_GREEN_COLOR,
+                    backgroundColor: 'white',
                     textDecorationLine: 'none',
                   },
           }} href={props.to}>{props.text}

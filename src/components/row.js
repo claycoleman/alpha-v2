@@ -9,7 +9,7 @@ export default props => (
       width: 'auto'
     }
   }}>
-    <h4>{props.title}</h4>
+    <h4 css={{textAlign: 'center'}}>{props.title}</h4>
     <p>{props.content}</p>
   </div>
 );

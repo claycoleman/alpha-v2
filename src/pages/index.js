@@ -36,10 +36,6 @@ export default class HomePage extends BasePage {
             width: 'auto'
           }
         }}>
-          {/* <h4>Donate</h4>
-          <p>While you may not be able to sacrifice your time, your contributions can still make a difference. 
-            Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a 
-            difference in a number of ways:</p> */}
             <ol>
               <li>College Application Fees</li>
               <li>ACT Prep Materials and Fees</li>

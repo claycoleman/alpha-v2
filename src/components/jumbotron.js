@@ -9,7 +9,7 @@ import img from '../../assets/images/Jumbotron.jpg';
 const Wrapper = styled.section`
   padding: 4em;
   background-image: url(${img});
-  background-position: center center;
+  background-position: 0% 70%;
   margin-bottom:50px;
   height:400px;
 `;
@@ -19,6 +19,7 @@ const Title = styled.h1`
   font-weight: 300;
   line-height: 1.2;
   color:white;
+  margin-top: 40px;
 `;
 
 const Example = (props) => {
@@ -26,10 +27,6 @@ const Example = (props) => {
     <div>
       <Wrapper>
         <Title>We are Alpha</Title>
-        {/* <p className="lead" css={{
-          color: "white",
-          textAlign:"center",
-        }}>If you're interested in helping in our cause, please donate here.</p> */}
         <GreenButton text = 'Donate Now' to='https://www.paypal.com/donate/?token=lpxLoY4Qi1Xk6PF846n-lul3ZEzGZWDIt0vH4bkuGOW2GymcPEIt-iypJIDIvsprHteX3m&country.x=US&locale.x=US'></GreenButton>
       </Wrapper>
     </div>
