@@ -79,8 +79,8 @@ export default props => {
           }}
         >
           <NavbarLink to="/">Home</NavbarLink>
-          <NavbarLink to="/what-we-do/">What We Do</NavbarLink>
-          <NavbarLink to="/who-we-are/">Who We Are</NavbarLink>
+          {/* <NavbarLink to="/what-we-do/">What We Do</NavbarLink> */}
+          <NavbarLink to="/who-we-are/">What is Alpha?</NavbarLink>
           <NavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</NavbarLink>
         </div>
       </div>

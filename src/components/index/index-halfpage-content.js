@@ -1,4 +1,5 @@
 import React from 'react';
+import GreenButton from '../greenbutton';
 
 export default props => (
   <div css={{
@@ -12,10 +13,16 @@ export default props => (
     <h4 css={{
       textAlign:"center",
     }}>{props.title}</h4>
-    <ul>
+    <p>{props.bodyContent}</p>
+    <ol>
+        <li>{props.bodyListItem1}</li>
+        <li>{props.bodyListItem2}</li>
+        <li>{props.bodyListItem3}</li>
+        <li>{props.bodyListItem4}</li>
         <li css={{
-          listStyleType:'none'
-        }}>{props.bodyListItems}</li>
-    </ul>
+          listStyleType:'none',
+          textAlign: 'center',
+        }}> <GreenButton text = {props.buttonTitle} to= {props.buttonRef}></GreenButton></li>
+    </ol>
   </div>
 );

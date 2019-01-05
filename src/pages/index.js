@@ -23,7 +23,12 @@ export default class HomePage extends BasePage {
         
         <JumboTron></JumboTron>
         <IndexVideoRow videoDatas={INDEX_VIDEO1} />
-        <HalfPageContent bodyListItems={'We build REAL relationships with each student'} title={'What We Do'}/>
+        <HalfPageContent bodyContent = {'While you may not be able to sacrifice your time, your contributions can still make a difference. Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a difference in a number of ways:'} 
+        bodyListItem1={'College Application Fees' } bodyListItem2={'ACT Prep Materials and Fees'} 
+        bodyListItem3={'Scholarships'} bodyListItem4={'Leadership Costs'} title={'Donate'}
+        buttonTitle ={'Donate Now'} buttonRef = {'https://www.paypal.com/donate/?token=lpxLoY4Qi1Xk6PF846n-lul3ZEzGZWDIt0vH4bkuGOW2GymcPEIt-iypJIDIvsprHteX3m&country.x=US&locale.x=US'}/>
+{/*         
+        
         <Row title = 'Donate' content = 'While you may not be able to sacrifice your time, your contributions can still make a difference. 
             Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a 
             difference in a number of ways:'/>
@@ -41,9 +46,9 @@ export default class HomePage extends BasePage {
               <li>ACT Prep Materials and Fees</li>
               <li>Scholarships</li>
               <li>Leadership Costs</li>
-            </ol>
-        <GreenButton text = 'Donate Now' to= 'https://www.paypal.com/donate/?token=lpxLoY4Qi1Xk6PF846n-lul3ZEzGZWDIt0vH4bkuGOW2GymcPEIt-iypJIDIvsprHteX3m&country.x=US&locale.x=US'></GreenButton>
-        </container>
+            </ol> */}
+       
+        {/* </container> */}
       </div>
     );
   }
