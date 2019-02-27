@@ -6,6 +6,7 @@ import { isAuthenticatedMentor, isAuthenticatedStudent } from '../../utils/auth'
 
 export default props => {
   let finalLinkText = 'login';
+  finalLinkText = 'students';
   if (isAuthenticatedMentor()) {
     finalLinkText = 'mentors';
   } else if (isAuthenticatedStudent()) {
@@ -37,6 +38,7 @@ export default props => {
             width: '100%',
             height: '100%',
             margin: '0px auto',
+            borderBottom: '1px solid rgba(34,34,34,0.4)',
             '&::after': {
               content: '""',
               position: 'absolute',
@@ -65,7 +67,8 @@ export default props => {
             margin: '0',
             marginLeft: '0.35rem',
             listStyle: 'none',
-            WebkitMaskImage: 'linear-gradient(to right,transparent,white 0.175rem,white 98%,transparent)',
+            WebkitMaskImage:
+              'linear-gradient(to right,transparent,white 0.175rem,white 98%,transparent)',
             maskImage: 'linear-gradient(to right,transparent,white 0.175rem,white 98%,transparent)',
             overflowX: 'auto',
           }}
@@ -73,13 +76,12 @@ export default props => {
         <div
           css={{
             display: 'flex',
-            '@media(max-width: 768px)': {
-              display: 'none',
-            },
+            // '@media(max-width: 767px)': {
+            //   display: 'none',
+            // },
           }}
         >
           <NavbarLink to="/">Home</NavbarLink>
-          {/* <NavbarLink to="/what-we-do/">What We Do</NavbarLink> */}
           <NavbarLink to="/who-we-are/">What is Alpha?</NavbarLink>
           <NavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</NavbarLink>
         </div>

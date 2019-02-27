@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Container from './container';
-import Navbar from './navbar/navbar';
-import MiniNavbar from './navbar/mini-navbar';
+import Container from '../components/container';
+import Navbar from '../components/navbar/navbar';
+import MiniNavbar from '../components/navbar/mini-navbar';
 
 export default class BasePage extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export default class BasePage extends Component {
     return (
       <div>
         <Navbar />
-        <MiniNavbar />
+        {/* <MiniNavbar /> */}
 
         <Container initialMargin>
           {this.renderPageContents()}

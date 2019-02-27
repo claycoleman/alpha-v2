@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Block from '../components/block'
 import { navigate } from 'gatsby';
-import BasePage from '../components/base-page';
+import BasePage from './base-page';
 import { isAuthenticatedStudent } from '../utils/auth';
 import TrainingVideoRow from '../components/training/training-video-row';
 import CalendarRow from '../components/signinComponents/calendarRow';

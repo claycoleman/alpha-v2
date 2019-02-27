@@ -35,8 +35,7 @@ export default props => {
       }}
     >
       <MiniNavbarLink to="/">Home</MiniNavbarLink>
-      <MiniNavbarLink to="/what-we-do/">What We Do</MiniNavbarLink>
-      <MiniNavbarLink to="/who-we-are/">Who We Are</MiniNavbarLink>
+      <MiniNavbarLink to="/who-we-are/">What is Alpha?</MiniNavbarLink>
       <MiniNavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</MiniNavbarLink>
     </div>
   );

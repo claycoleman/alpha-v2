@@ -1,5 +1,5 @@
 import React from 'react';
-import BasePage from '../components/base-page';
+import BasePage from './base-page';
 import Header from '../components/header';
 import { INDEX_VIDEO1, DONATE_LINK } from '../utils/constants';
 import IndexVideoRow from '../components/index/index-video-row';
@@ -18,10 +18,7 @@ export default class HomePage extends BasePage {
   renderPageContents() {
     return (
       <div>
-        {/* <Header>We are Alpha</Header> */}
-
         <JumboTron />
-        <IndexVideoRow videoDatas={INDEX_VIDEO1} />
         <HalfPageContent buttonRef={DONATE_LINK} />
         {/*         
         

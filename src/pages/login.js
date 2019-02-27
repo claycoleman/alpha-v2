@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import { navigate } from 'gatsby';
-import BasePage from '../components/base-page';
+import BasePage from './base-page';
 import { MENTOR_CODE, STUDENT_CODE, CENTRAL_GREEN_COLOR } from '../utils/constants';
 import { authenticateMentor, authenticateStudent } from '../utils/auth';
 import 'bootstrap/dist/css/bootstrap.min.css';

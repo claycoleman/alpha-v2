@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
-import BasePage from '../components/base-page';
+import BasePage from './base-page';
 import IndexVideoRow from '../components/index/index-video-row';
 import { INDEX_VIDEO2 } from '../utils/constants';
 import img from '../../assets/images/WhatWeDo.jpg';

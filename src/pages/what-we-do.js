@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
-import BasePage from '../components/base-page';
+import BasePage from './base-page';
 import {Container} from 'reactstrap';
 import img from '../../assets/images/WhatWeDo2.jpg';
 import img2 from '../../assets/images/ACTPrep.jpg';

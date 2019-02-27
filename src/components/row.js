@@ -4,7 +4,7 @@ export default props => (
   <div css={{
     width: "100%",
     float: "left",
-    '@media(max-width: 768px)': {
+    '@media(max-width: 767px)': {
       float: 'none',
       width: 'auto'
     }

@@ -10,7 +10,7 @@ export default class IndexVideoRow extends Component {
           display: 'inline',
           float:'left',
           width:'50%',
-          '@media(max-width: 768px)': {
+          '@media(max-width: 767px)': {
             float: 'none',
             width: 'auto'
           }}}>
