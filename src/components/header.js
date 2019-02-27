@@ -1,3 +1,10 @@
 import React from "react"
 
-export default (props) => <h1>{props.children}</h1>
+export default (props) => (
+<h2 css = {{
+    "textAlign":"center",
+    "marginBottom": "40px",
+}}>{props.children}</h2>)
+
+
+  

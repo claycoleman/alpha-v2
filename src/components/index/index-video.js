@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
 
-export default class TrainingVideo extends Component {
+export default class IndexVideo extends Component {
   render() {
     const opts = {
       height: '390',
@@ -14,7 +14,9 @@ export default class TrainingVideo extends Component {
 
     return (
       <div>
-        {/* <h4>{this.props.videoData.title}</h4> */}
+        <h4 css={{
+          textAlign: "center",
+        }}>{this.props.videoData.title}</h4>
         <YouTube videoId={this.props.videoData.id} opts={opts} onReady={this._onReady} />
       </div>
     );
