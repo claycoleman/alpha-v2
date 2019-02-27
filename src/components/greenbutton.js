@@ -1,5 +1,5 @@
 import React from 'react';
-import { CENTRAL_GREEN_COLOR, CENTRAL_LIGHTGREEN_COLOR } from '../utils/constants';
+import { CENTRAL_GREEN_COLOR, CENTRAL_DARKGREEN_COLOR } from '../utils/constants';
 // import { Button } from 'reactstrap';
 
 // const Link = styled.section`
@@ -42,7 +42,7 @@ export default props => {
         transition: 'background-color 250ms cubic-bezier(0.4,0,0.2,1)',
         ':hover': {
           color: 'white',
-          backgroundColor: CENTRAL_LIGHTGREEN_COLOR,
+          backgroundColor: CENTRAL_DARKGREEN_COLOR,
           textDecorationLine: 'none',
         },
       }}

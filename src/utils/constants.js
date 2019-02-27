@@ -1,3 +1,5 @@
+export const INCORRECT_CODE_COUNT_KEY = 'alpha-incorrect-code-count';
+
 export const MENTOR_CODE = 'Alpha mentors rock';
 export const MENTOR_AUTH_KEY = 'alpha-mentor';
 
@@ -11,13 +13,6 @@ export const MENTOR_VIDEOS = [
     id: 'y-P0m0M_8pc',
   },
 ];
-
-export const INDEX_VIDEO2 = [
-  {
-    title:'',
-    id:'cOPp3KJEkyQ'
-  }
-]
 export const STUDENT_CODE = 'Students lifting students';
 export const STUDENT_AUTH_KEY = 'alpha-student';
 
@@ -63,6 +58,7 @@ export const RESPONSIVE_OUTER_PADDINGS = {
 };
 
 export const CENTRAL_GREEN_COLOR = '#017C3D';
-export const CENTRAL_LIGHTGREEN_COLOR = '#005D1E'
+export const CENTRAL_LIGHTGREEN_COLOR = '#209B5C';
+export const CENTRAL_DARKGREEN_COLOR = '#005D1E';
 
 export const DONATE_LINK = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NZZ4U7KWQ62KQ';

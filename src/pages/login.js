@@ -4,7 +4,8 @@ import { navigate } from 'gatsby';
 import BasePage from './base-page';
 import { MENTOR_CODE, STUDENT_CODE, CENTRAL_GREEN_COLOR } from '../utils/constants';
 import { authenticateMentor, authenticateStudent } from '../utils/auth';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'reactstrap';
 
 export default class LoginPage extends BasePage {
   constructor(props) {
@@ -12,6 +13,7 @@ export default class LoginPage extends BasePage {
     this.state = {
       enteredCode: '',
       incorrectCode: false,
+      incorrectTries: 0,
     };
   }
 
@@ -37,30 +39,55 @@ export default class LoginPage extends BasePage {
 
   renderPageContents() {
     return (
-      <div css={{
-        "textAlign":"center",
-        "width": "75%",
-        "margin": "auto",
-        "height": "300px",
-        "marginTop": "150px !important",
-        "backgroundColor": CENTRAL_GREEN_COLOR,
-        "display":"block",
-      }}>
-        <h2 css={{
-          "color":"white",
-          "textAlign": "center",
-        }}>Login</h2>
-        <p css={{
-          "color": "white",
-        }}>Alpha Mentors and Students, enter your passcode here to access trainings and other materials.</p>
-        <input css={{"width":"25% !important",
-                      "display":"block",
-                      "marginLeft": "auto",
-                      "marginRight": "auto",                       
-        }}
-        className = "form-control" placeholder="Passcode" onChange={this._handleTextChange} onKeyDown={this._handleKeyDown} value={this.state.enteredCode} type = "password" />
-        {this.state.incorrectCode && <h3>Incorrect passcode!</h3>}
-      </div>
+      <Container style={{ padding: 0 }}>
+        <div
+          style={{
+            margin: '0 auto',
+            marginTop: 64,
+            padding: 16,
+            backgroundColor: CENTRAL_GREEN_COLOR,
+            borderRadius: 4,
+            maxWidth: 750,
+          }}
+        >
+          <h2
+            css={{
+              color: 'white',
+              textAlign: 'center',
+            }}
+          >
+            Login
+          </h2>
+          <p
+            css={{
+              color: 'white',
+              fontFamily: '"Avenir Next", sans-serif',
+            }}
+          >
+            Alpha Mentors and Students, enter your passcode here to access trainings and other
+            materials.
+          </p>
+          <input
+            css={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              fontFamily: '"Avenir Next", sans-serif',
+            }}
+            className="form-control"
+            placeholder="Passcode"
+            onChange={this._handleTextChange}
+            onKeyDown={this._handleKeyDown}
+            value={this.state.enteredCode}
+            type="password"
+          />
+          {this.state.incorrectCode && (
+            <h4 style={{ color: 'black', margin: '0', marginTop: '16px' }}>
+              Incorrect passcode!
+            </h4>
+          )}
+        </div>
+      </Container>
     );
   }
 }

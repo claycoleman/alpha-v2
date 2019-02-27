@@ -1,4 +1,4 @@
-import { MENTOR_AUTH_KEY, STUDENT_AUTH_KEY } from "./constants";
+import { MENTOR_AUTH_KEY, STUDENT_AUTH_KEY, INCORRECT_CODE_COUNT_KEY } from './constants';
 
 export function authenticateMentor() {
   sessionStorage.setItem(MENTOR_AUTH_KEY, 'true');
@@ -22,4 +22,16 @@ export function unauthenticateStudent() {
 
 export function isAuthenticatedStudent() {
   return sessionStorage.getItem(STUDENT_AUTH_KEY);
+}
+
+// TODO if we really want to make it secure... prevent people from accessing this for a day or something after 
+// this count gets high enough
+export function incrementBadCodeCount() {
+  const badCount = parseInt(localStorage.getItem(INCORRECT_CODE_COUNT_KEY) || 0) + 1;
+  localStorage.setItem(INCORRECT_CODE_COUNT_KEY, badCount);
+  return badCount;
+}
+
+export function getBadCodeCount() {
+  return localStorage.getItem(INCORRECT_CODE_COUNT_KEY);
 }

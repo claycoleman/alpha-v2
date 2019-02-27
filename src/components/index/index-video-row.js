@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IndexVideo from './index-video';
-import { CENTRAL_LIGHTGREEN_COLOR } from '../../utils/constants';
+import { CENTRAL_DARKGREEN_COLOR } from '../../utils/constants';
 
 export default class IndexVideoRow extends Component {
   render() {

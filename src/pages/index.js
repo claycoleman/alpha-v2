@@ -10,7 +10,6 @@ import GreenButton from '../components/greenbutton';
 import { Container } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import container from '../components/container';
-import Row from '../components/row';
 
 export default class HomePage extends BasePage {
   componentDidMount() {}

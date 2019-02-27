@@ -6,7 +6,6 @@ import { isAuthenticatedMentor, isAuthenticatedStudent } from '../../utils/auth'
 
 export default props => {
   let finalLinkText = 'login';
-  finalLinkText = 'students';
   if (isAuthenticatedMentor()) {
     finalLinkText = 'mentors';
   } else if (isAuthenticatedStudent()) {

@@ -3,7 +3,8 @@ import React from "react"
 export default (props) => (
 <h2 css = {{
     "textAlign":"center",
-    "marginBottom": "40px",
+    "margin": "0",
+    "padding": "24px 0",
 }}>{props.children}</h2>)
 
 

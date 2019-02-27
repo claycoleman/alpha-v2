@@ -1,19 +1,21 @@
 import React from 'react';
 
 export default props => (
-  <div css={{
-    width: "50%",
-    float:'left',
-    textAlign: 'center',
-    marginTop: '25px',
-    '@media(max-width: 767px)': {
-      float: 'none',
-      width: 'auto'
-    }
-  }}>
-    <img src={props.bodyImage} css={{width: '65%', textAlign: 'center'}}/>
-    <h4>{props.title}</h4>
-    <p css={{width: '90%', marginLeft: '80px', textAlign: 'left'}}>{props.bodyText}</p>
+  <div
+    css={{
+      width: '50%',
+      padding: '16px',
+      textAlign: 'left',
+      display: 'inline-block',
+      color: 'white',
+      '@media(max-width: 767px)': {
+        width: '100%',
+      },
+    }}
+  >
+    <img src={props.bodyImage} css={{ width: '100%', textAlign: 'center' }} />
+    <h4 css={{ marginBottom: '8px' }}>{props.title}</h4>
+    <p>{props.bodyText}</p>
     {/* <button href={props.moreLink}>More -></button> */}
   </div>
 );
