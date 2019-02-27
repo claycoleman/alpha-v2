@@ -6,7 +6,7 @@ export default props => (
     float:'left',
     textAlign: 'center',
     marginTop: '25px',
-    '@media(max-width: 768px)': {
+    '@media(max-width: 767px)': {
       float: 'none',
       width: 'auto'
     }

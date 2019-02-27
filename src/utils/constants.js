@@ -12,13 +12,6 @@ export const MENTOR_VIDEOS = [
   },
 ];
 
-export const INDEX_VIDEO1 = [
-  {
-    title: 'Introduction to Alpha',
-    id: 'veO6l0mVv6o'
-  }
-]
-
 export const INDEX_VIDEO2 = [
   {
     title:'',
@@ -38,6 +31,10 @@ export const STUDENT_VIDEOS = [
 export const RESPONSIVE_OUTER_MARGINS = {
   marginLeft: '1.75rem',
   marginRight: '1.75rem',
+  '@media(max-width: 767px)': {
+    marginLeft: '16px',
+    marginRight: '16px',
+  },
   '@media(min-width: 1200px)': {
     marginLeft: '3.5rem',
     marginRight: '3.5rem',
@@ -51,6 +48,10 @@ export const RESPONSIVE_OUTER_MARGINS = {
 export const RESPONSIVE_OUTER_PADDINGS = {
   paddingLeft: '1.75rem',
   paddingRight: '1.75rem',
+  '@media(max-width: 767px)': {
+    paddingLeft: '8px',
+    paddingRight: '8px',
+  },
   '@media(min-width: 1200px)': {
     paddingLeft: '3.5rem',
     paddingRight: '3.5rem',
@@ -62,6 +63,6 @@ export const RESPONSIVE_OUTER_PADDINGS = {
 };
 
 export const CENTRAL_GREEN_COLOR = '#017C3D';
-export const CENTRAL_LIGHTGREEN_COLOR = '#6B8F71'
+export const CENTRAL_LIGHTGREEN_COLOR = '#005D1E'
 
 export const DONATE_LINK = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NZZ4U7KWQ62KQ';
