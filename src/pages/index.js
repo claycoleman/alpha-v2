@@ -21,7 +21,7 @@ export default class HomePage extends BasePage {
       <div>
         {/* <Header>We are Alpha</Header> */}
         
-        <JumboTron></JumboTron>
+        <JumboTron />
         <IndexVideoRow videoDatas={INDEX_VIDEO1} />
         <HalfPageContent bodyContent = {'While you may not be able to sacrifice your time, your contributions can still make a difference. Alpha is a registered 501 (c)(3) nonprofit solely reliant on private donors. Your contributions make a difference in a number of ways:'} 
         bodyListItem1={'College Application Fees' } bodyListItem2={'ACT Prep Materials and Fees'} 
