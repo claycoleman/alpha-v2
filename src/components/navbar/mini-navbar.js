@@ -1,14 +1,17 @@
 import React from 'react';
 import MiniNavbarLink from './mini-navbar-link';
-import { isAuthenticatedMentor, isAuthenticatedStudent } from '../../utils/auth';
+import { isAuthenticatedMentor, isAuthenticatedStudent, isAuthenticatedUser } from '../../utils/auth';
 
 export default props => {
   let finalLinkText = 'login';
-  if (isAuthenticatedMentor()) {
-    finalLinkText = 'mentors';
-  } else if (isAuthenticatedStudent()) {
-    finalLinkText = 'students';
-  }
+  if (isAuthenticatedUser()) {
+    finalLinkText = 'portal';
+  } 
+  // if (isAuthenticatedMentor()) {
+  //   finalLinkText = 'mentors';
+  // } else if (isAuthenticatedStudent()) {
+  //   finalLinkText = 'students';
+  // }
 
   return (
     <div

@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../components/header';
 import { navigate } from 'gatsby';
 import BasePage from './base-page';
-import { isAuthenticatedMentor } from '../utils/auth';
+import { isAuthenticatedMentor, isAuthenticatedUser } from '../utils/auth';
 import TrainingVideoRow from '../components/training/training-video-row';
 import { MENTOR_VIDEOS } from '../utils/constants';
 import { Link } from 'gatsby';
 
 export default class MentorsPage extends BasePage {
   componentWillMount() {
-    if (!isAuthenticatedMentor()) {
+    if (!isAuthenticatedUser()) {
       navigate('/login/');
     }
   }

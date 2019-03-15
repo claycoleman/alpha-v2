@@ -1,4 +1,16 @@
-import { MENTOR_AUTH_KEY, STUDENT_AUTH_KEY, INCORRECT_CODE_COUNT_KEY } from './constants';
+import { MENTOR_AUTH_KEY, STUDENT_AUTH_KEY, INCORRECT_CODE_COUNT_KEY, USER_AUTH_KEY } from "./local-constants";
+
+export function authenticateUser() {
+  sessionStorage.setItem(USER_AUTH_KEY, 'true');
+}
+
+export function unauthenticateUser() {
+  sessionStorage.removeItem(USER_AUTH_KEY);
+}
+
+export function isAuthenticatedUser() {
+  return sessionStorage.getItem(USER_AUTH_KEY);
+}
 
 export function authenticateMentor() {
   sessionStorage.setItem(MENTOR_AUTH_KEY, 'true');
