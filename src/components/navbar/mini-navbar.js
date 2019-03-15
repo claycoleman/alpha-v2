@@ -1,12 +1,16 @@
 import React from 'react';
 import MiniNavbarLink from './mini-navbar-link';
-import { isAuthenticatedMentor, isAuthenticatedStudent, isAuthenticatedUser } from '../../utils/auth';
+import {
+  isAuthenticatedMentor,
+  isAuthenticatedStudent,
+  isAuthenticatedUser,
+} from '../../utils/auth';
 
 export default props => {
   let finalLinkText = 'login';
   if (isAuthenticatedUser()) {
     finalLinkText = 'portal';
-  } 
+  }
   // if (isAuthenticatedMentor()) {
   //   finalLinkText = 'mentors';
   // } else if (isAuthenticatedStudent()) {
@@ -29,12 +33,13 @@ export default props => {
         zIndex: '5',
         borderTop: '1px solid #ede7f3',
         background: '#fbfafc',
-        height: '2.5rem',
-        fontFamily: 'Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
+        height: '3rem',
+        fontFamily:
+          'Futura PT,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
         paddingBottom: 'env(safe-area-inset-bottom)',
         '@media(min-width: 768px)': {
           display: 'none',
-        }
+        },
       }}
     >
       <MiniNavbarLink to="/">Home</MiniNavbarLink>

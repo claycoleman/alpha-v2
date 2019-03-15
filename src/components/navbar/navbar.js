@@ -2,13 +2,17 @@ import React from 'react';
 import LogoImage from './logo-image';
 import NavbarLink from './navbar-link';
 import { RESPONSIVE_OUTER_PADDINGS } from '../../utils/constants';
-import { isAuthenticatedMentor, isAuthenticatedStudent, isAuthenticatedUser } from '../../utils/auth';
+import {
+  isAuthenticatedMentor,
+  isAuthenticatedStudent,
+  isAuthenticatedUser,
+} from '../../utils/auth';
 
 export default props => {
   let finalLinkText = 'login';
   if (isAuthenticatedUser()) {
     finalLinkText = 'portal';
-  } 
+  }
   // if (isAuthenticatedMentor()) {
   //   finalLinkText = 'mentors';
   // } else if (isAuthenticatedStudent()) {
@@ -20,7 +24,7 @@ export default props => {
       css={{
         backgroundColor: 'rgba(255, 255, 255, 0.976)',
         position: 'fixed',
-        height: '2.5rem',
+        height: '3rem',
         left: '0px',
         right: '0px',
         top: '0px',
