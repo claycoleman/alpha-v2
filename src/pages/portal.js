@@ -6,6 +6,7 @@ import { isAuthenticatedMentor, isAuthenticatedUser } from '../utils/auth';
 import TrainingVideoRow from '../components/training/training-video-row';
 import { MENTOR_VIDEOS } from '../utils/constants';
 import { Link } from 'gatsby';
+import PortalContainer from '../components/training/portal-container';
 
 export default class MentorsPage extends BasePage {
   componentWillMount() {
@@ -17,10 +18,8 @@ export default class MentorsPage extends BasePage {
   renderPageContents() {
     return (
       <div>
-        <Header>Mentors</Header>
-        <p>Here we will display all the training videos and other materials as necessary.</p>
-        <TrainingVideoRow videoDatas={MENTOR_VIDEOS} />
-        <Link to="/mentors/trainings">Trainings</Link>
+        <Header>Materials Portal</Header>
+        <PortalContainer />
       </div>
     );
   }
