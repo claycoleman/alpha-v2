@@ -11,6 +11,7 @@ import ColumnItem from '../components/column-item';
 import CustomYoutube from '../components/CustomYoutube';
 import { Row, Col } from '../components';
 import styled from 'styled-components';
+import { relative } from 'path';
 
 const BodyText = styled.p`
   margin-top: 0.833rem;
@@ -40,7 +41,7 @@ export default class WhoWeArePage extends BasePage {
                 },
               }}
             >
-              <BodyText style={{ marginTop: 0}}>
+              <BodyText style={{ marginTop: 0 }}>
                 Alpha was founded with a simple idea: we believe that every kid deserves to succeed.
                 As students at BYU in the September of 2016, we came to some important realizations.
               </BodyText>
@@ -52,7 +53,7 @@ export default class WhoWeArePage extends BasePage {
                 opportunity.
               </BodyText>
 
-              <BodyText style={{ marginBottom: 0}}>
+              <BodyText style={{ marginBottom: 0 }}>
                 Second, we recognized that we did. Each of us could think of specific individuals
                 who were instrumental in all of the hoop-jumping and stone-stepping necessary to get
                 to college.
@@ -69,20 +70,42 @@ export default class WhoWeArePage extends BasePage {
             students get to college who otherwise would not.{' '}
           </BodyText>
 
-          <BodyText>
+          <BodyText style={{ position: 'relative' }}>
             We believe that everyone has the right to higher education. At ALPHA, we are working to
             give everyone that opportunity, one student at a time.{' '}
           </BodyText>
+        </Container>
 
-          <div
-            css={{
-              backgroundColor: CENTRAL_GREEN_COLOR,
-              '@media(max-width: 767px)': {
-                margin: "0 -16px",
-              },
-            }}
-          >
-            <h3 css={{ color: 'white', textAlign: 'center', width: '100%', margin: 0, padding: '24px 0' }}>
+        <div
+          css={{
+            backgroundColor: CENTRAL_GREEN_COLOR,
+            width: '100vw',
+            marginLeft: '-1.75rem',
+            marginRight: '-1.75rem',
+            '@media(max-width: 767px)': {
+              marginLeft: '-16px',
+              marginRight: '-16px',
+            },
+            '@media(min-width: 1200px)': {
+              marginLeft: '-3.5rem',
+              marginRight: '-3.5rem',
+            },
+            '@media(min-width: 1450px)': {
+              marginLeft: '-4.2rem',
+              marginRight: '-4.2rem',
+            },
+          }}
+        >
+          <Container>
+            <h3
+              css={{
+                color: 'white',
+                textAlign: 'center',
+                width: '100%',
+                margin: 0,
+                padding: '24px 0',
+              }}
+            >
               What We Do
             </h3>
             <ColumnItem
@@ -99,43 +122,46 @@ export default class WhoWeArePage extends BasePage {
                 'We help the students with the challenging process of applying to college. WE have been in their shoes and we know that the process is much easier when there is someone to help.'
               }
             />
+          </Container>
+        </div>
+        <Container>
+          <div>
+            <h3 css={{ textAlign: 'center', width: '100%', margin: 0, padding: '24px 0' }}>
+              Interested in Being a Mentor?
+            </h3>
+            <Row style={{ alignItems: 'center', marginBottom: 24 }}>
+              <Col>
+                <img css={{ maxWidth: '100%' }} src={img} />
+              </Col>
+              <Col
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+                css={{
+                  '@media(max-width: 767px)': {
+                    display: 'inline-block !important',
+                  },
+                }}
+              >
+                <BodyText style={{ marginTop: 0 }}>
+                  In order to deliver our services to local high school students we need the help of
+                  enthusiastic, committed mentors and leaders who want to pay it forward to the next
+                  generation of students.
+                </BodyText>
+                <BodyText>
+                  Interested in working directly with students in a classroom setting? As a mentor,
+                  you will have a direct impact on high school students by helping them prepare for
+                  and apply to colleges.
+                </BodyText>
+
+                <BodyText style={{ marginBottom: 0 }}>
+                  Please email us at alpha.mentoringut@gmail.com to learn more about mentoring
+                  opportunities and how to get involved.
+                </BodyText>
+              </Col>
+            </Row>
           </div>
-
-          <h3 css={{ textAlign: 'center', width: '100%', margin: 0, padding: '24px 0' }}>
-            Interested in Being a Mentor?
-          </h3>
-          <Row style={{ alignItems: 'center', marginBottom: 24 }}>
-            <Col>
-              <img css={{ maxWidth: '100%' }} src={img} />
-            </Col>
-            <Col
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-              css={{
-                '@media(max-width: 767px)': {
-                  display: 'inline-block !important',
-                },
-              }}
-            >
-              <BodyText style={{ marginTop: 0}}>
-                In order to deliver our services to local high school students we need the help of
-                enthusiastic, committed mentors and leaders who want to pay it forward to the next
-                generation of students.
-              </BodyText>
-              <BodyText>
-                Interested in working directly with students in a classroom setting? As a mentor,
-                you will have a direct impact on high school students by helping them prepare for
-                and apply to colleges.
-              </BodyText>
-
-              <BodyText style={{ marginBottom: 0}}>
-                Please email us at alpha.mentoringut@gmail.com to learn more about mentoring
-                opportunities and how to get involved.
-              </BodyText>
-            </Col>
-          </Row>
         </Container>
       </div>
     );

@@ -38,10 +38,10 @@ const Wrapper = styled.section`
 `;
 
 const BannerHelper = styled.div`
-  height: 445px;
+  height: 455px;
 
   @media (max-width: 767px) {
-    height: 395px;
+    height: 403px;
   }
 `;
 
