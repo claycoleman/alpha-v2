@@ -13,7 +13,7 @@ export default props => (
       },
     }}
   >
-    <img src={props.bodyImage} css={{ width: '100%', textAlign: 'center' }} />
+    <img alt={props.title} src={props.bodyImage} css={{ width: '100%', textAlign: 'center' }} />
     <h4 css={{ marginBottom: '8px' }}>{props.title}</h4>
     <p>{props.bodyText}</p>
     {/* <button href={props.moreLink}>More -></button> */}
