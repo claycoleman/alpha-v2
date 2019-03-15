@@ -32,7 +32,7 @@ export const PORTAL_TABS = [
     title: 'Math',
     extraLinks: [
       {
-        title: 'Long Division/Remainders',
+        title: 'Long Division / Remainders',
         link: 'https://www.khanacademy.org/math/arithmetic/arith-review-multiply-divide/modal/v/long-division-with-remainder-example',
       },
       {
@@ -68,7 +68,7 @@ export const PORTAL_TABS = [
         link: 'https://www.khanacademy.org/math/algebra2/manipulating-functions/combining-functions/v/quotient-of-functions',
       },
       {
-        title: 'Graphing Quadratics/Parabolas',
+        title: 'Graphing Quadratics / Parabolas',
         link: 'https://www.khanacademy.org/math/algebra/quadratics/parabolas-intro-alg1/v/parabolas-intro',
       },
       {
