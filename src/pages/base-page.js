@@ -13,13 +13,17 @@ export default class BasePage extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        css={{
+          '@media(max-width: 767px)': {
+            paddingBottom: 60,
+          },
+        }}
+      >
         <Navbar />
         {/* <MiniNavbar /> */}
 
-        <Container initialMargin>
-          {this.renderPageContents()}
-        </Container>
+        <Container initialMargin>{this.renderPageContents()}</Container>
       </div>
     );
   }
