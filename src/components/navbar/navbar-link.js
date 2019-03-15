@@ -28,8 +28,8 @@ export default props => {
         textDecoration: 'none',
         textTransform: 'uppercase',
         top: '0',
-        WebkitTransition: 'color 250ms cubic-bezier(0.4,0,0.2,1)',
-        transition: 'all 250ms cubic-bezier(0.4,0,0.2,1)',
+        WebkitTransition: 'color 200ms cubic-bezier(0.4,0,0.2,1)',
+        transition: 'all 200ms cubic-bezier(0.4,0,0.2,1)',
         transitionProperty: 'color, border-bottom',
 
         zIndex: '1',

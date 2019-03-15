@@ -39,7 +39,7 @@ export default props => {
         borderRadius: '.25rem',
         backgroundColor: CENTRAL_GREEN_COLOR,
         color: 'white',
-        transition: 'background-color 250ms cubic-bezier(0.4,0,0.2,1)',
+        transition: 'background-color 200ms cubic-bezier(0.4,0,0.2,1)',
         ':hover': {
           color: 'white',
           backgroundColor: CENTRAL_DARKGREEN_COLOR,
