@@ -61,3 +61,5 @@ typings/
 public
 yarn-error.log
 package-lock.json
+
+local-constants.js
