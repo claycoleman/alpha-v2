@@ -11,11 +11,11 @@ export default props => (
         position: 'relative',
         zIndex: '1',
         verticalAlign: 'top',
-        flex: `0 0 2.5rem`,
-        width: '2.5rem',
-        minWidth: '2.5rem',
-        height: '2.5rem',
-        minHeight: '2.5rem',
+        flex: `0 0 3rem`,
+        width: '3rem',
+        minWidth: '3rem',
+        height: '3rem',
+        minHeight: '3rem',
         margin: 0,
       }}
       src={logo}
