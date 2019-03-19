@@ -5,7 +5,7 @@ import BasePage from './base-page';
 import { USER_CODE } from '../utils/local-constants';
 import { CENTRAL_GREEN_COLOR } from '../utils/constants';
 import { authenticateMentor, authenticateStudent, authenticateUser } from '../utils/auth';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Container } from 'reactstrap';
 
 export default class LoginPage extends BasePage {

@@ -7,7 +7,7 @@ import TrainingVideoRow from '../../components/training/training-video-row';
 import { MENTOR_VIDEOS } from '../../utils/constants';
 
 export default class MentorTrainingsPage extends BasePage {
-  componentWillMount() {
+  componentDidMount() {
     if (!isAuthenticatedMentor()) {
       navigate('/login/');
     }

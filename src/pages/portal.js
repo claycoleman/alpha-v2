@@ -9,7 +9,7 @@ import { Link } from 'gatsby';
 import PortalContainer from '../components/training/portal-container';
 
 export default class MentorsPage extends BasePage {
-  componentWillMount() {
+  componentDidMount() {
     if (!isAuthenticatedUser()) {
       navigate('/login/');
     }

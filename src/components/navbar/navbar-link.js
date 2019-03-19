@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { CENTRAL_GREEN_COLOR } from '../../utils/constants';
 
 export default props => {
-  const currUrl = window.location.pathname === props.to;
+  const currUrl = typeof window !== `undefined` ? window.location.pathname === props.to : false;
   return (
     <Link
       css={{

@@ -11,7 +11,7 @@ import { STUDENT_VIDEOS } from '../utils/constants';
 import iFrame from 'react-iframe'
 
 export default class StudentsPage extends BasePage {
-  componentWillMount() {
+  componentDidMount() {
     if (!isAuthenticatedStudent()) {
       navigate('/login/');
     }

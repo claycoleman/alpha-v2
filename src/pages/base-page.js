@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from '../components/container';
 import Navbar from '../components/navbar/navbar';
 import MiniNavbar from '../components/navbar/mini-navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class BasePage extends Component {
   constructor(props) {
