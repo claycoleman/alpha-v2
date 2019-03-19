@@ -3,7 +3,6 @@ import TrainingVideo from './training-video';
 
 export default class TrainingVideoRow extends Component {
   render() {
-    console.log(this.props.videoDatas);
     return (
       <div css={{ display: 'inline',}}>
         {this.props.videoDatas.map(video => (

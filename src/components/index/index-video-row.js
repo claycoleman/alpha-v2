@@ -4,7 +4,6 @@ import { CENTRAL_DARKGREEN_COLOR } from '../../utils/constants';
 
 export default class IndexVideoRow extends Component {
   render() {
-    console.log(this.props.videoDatas);
     return (
       <div css={{ 
           display: 'inline',
