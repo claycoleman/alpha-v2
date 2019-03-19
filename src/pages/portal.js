@@ -8,11 +8,16 @@ import { MENTOR_VIDEOS } from '../utils/constants';
 import { Link } from 'gatsby';
 import PortalContainer from '../components/training/portal-container';
 
-export default class MentorsPage extends BasePage {
+export default class PortalPage extends BasePage {
   componentDidMount() {
     if (!isAuthenticatedUser()) {
       navigate('/login/');
     }
+  }
+
+  // hacky but allows us to style the portal navbar link well
+  renderBodyClass() {
+    return 'portal-body';
   }
 
   renderPageContents() {

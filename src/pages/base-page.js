@@ -11,6 +11,7 @@ export default class BasePage extends Component {
 
   // to override
   renderPageContents() {}
+  renderBodyClass() {}
 
   render() {
     return (
@@ -20,6 +21,7 @@ export default class BasePage extends Component {
             paddingBottom: 60,
           },
         }}
+        className={this.renderBodyClass()}
       >
         <Navbar />
         {/* <MiniNavbar /> */}

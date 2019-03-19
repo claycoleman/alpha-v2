@@ -1,0 +1,8 @@
+.currentURL,
+a[aria-current='page'],
+.portal-body a.navbar-link:nth-of-type(3) {
+  /* this last style is pretty hacky; it allows us to ensure that on page load, we are getting the right styles for
+  the active link in the navbar. */
+  border-bottom-color: #017c3d;
+  color: #017c3d;
+}

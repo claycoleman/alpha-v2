@@ -89,6 +89,8 @@ export default props => {
         >
           <NavbarLink to="/">Home</NavbarLink>
           <NavbarLink to="/who-we-are/">What is Alpha?</NavbarLink>
+          {/* right now, the portal link is expected to be the third link in navbar-link.css so if 
+          you add more or change the order, make sure it's reflected there as well */}
           <NavbarLink to={`/${finalLinkText}/`}>{finalLinkText}</NavbarLink>
         </div>
       </div>
